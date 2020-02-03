@@ -322,11 +322,11 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01 .contents{position: absolute; left: 0; top: 0; height: 100%;} 
     .sec01 .aniArea {height: 100%; position: absolute; top: 0; left: 0;}
     .sentenceType01{padding: 0 2rem; font-size: 1.4rem; font-weight: normal;}
-    .sec01 .aniArea .group01{left: 79%; top: 62%; width: 0; height: 0; padding: 15.625% 14.375%;}
-    .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: 0; height: 0; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: 0; height: 0; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: 0; height: 0; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea04{left: 70%; top: 22%; padding: 15.2173%; width: 0; height: 0; background-size: 100%; background-position: center;}
+    .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto; padding: 15.625% 14.375%;}
+    .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: auto; height: auto; background-size: 100%; background-position: center;}
+    .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
+    .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
+    .sec01 .aniArea .korea04{left: 70%; top: 22%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
     .sec01 .aniArea .korea05{left: -10%; top: 80%; padding: 10.0543% 24.4565%; width: 0; height: 0; background: url(../images/ani01_korea05_mo.png) no-repeat; background-size: 100%;}
     .sec02 .contents{text-align: center;}
     .sec02 .contents > div {overflow: hidden; overflow-x: auto;}
