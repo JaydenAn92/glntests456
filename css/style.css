@@ -322,8 +322,8 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01 .contents{position: absolute; left: 0; top: 0; height: 100%;} 
     .sec01 .aniArea {height: 100%; position: absolute; top: 0; left: 0;}
     .sentenceType01{padding: 0 2rem; font-size: 1.4rem; font-weight: normal;}
-    .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto;} /* padding: 15.625% 14.375%; */
-    .sec01 .aniArea .group01::before{left: 79%; top: 62%; width: auto; height: auto; padding: 15.625% 14.375%;}
+    .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto;} 
+/* padding: 15.625% 14.375%; */
     .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: auto; height: auto; background-size: 100%; background-position: center;}
     .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
     .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
@@ -355,27 +355,23 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01 .aniArea .group04 {left: 22%; top: 65%; width: auto; height: auto;}/* padding: 12.4218% 14.5312%; */
     .sec01 .aniArea .taiwan01 {padding: 37.6344%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .taiwan02 {padding: 15.7608%; width: 0; height: 0; background-size: 100%;}
-    .sec01 .aniArea .group05 {top: 52%; padding: 2.5781% 7.1093% ; width: 0; height: 0;  background: url(../images/ani01_obj01.png) no-repeat; background-size: 100%;}
+    .sec01 .aniArea .group05 {top: 82%; padding: 2.5781% 7.1093% ; width: 0; height: 0;  background: url(../images/ani01_obj01.png) no-repeat; background-size: 100%;}
     @keyframes obj01 {
         0% {
             opacity: 0;
             left: 100%;
-            transform: scale(0.8);
+            top: 82%;
         }
         10% {
             opacity: 1;
-        }
-        50%{
-            transform: scale(1.2);
-            top: 45%;
         }
         90% {
             opacity: 1;
         }
         100% {
             opacity: 0;
-            left: -10%;
-            transform: scale(0.6);
+            left: -20%;
+            top: 52%;
         }
     }
     .sec02 .mediaLists .listDate{font-size: 1.2rem;}
