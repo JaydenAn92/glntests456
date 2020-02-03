@@ -335,9 +335,9 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec02 .contents > div li{float: left;}
     .sec02 .contents .btn {display: inline-block; margin: 2rem 0 0; border: 0.1rem solid #ededed;; border-radius: 0.2rem; padding: 1rem 3rem; font-size: 1.5rem; color: #333333;}
     /* transition Area */
-    .sec01.played .korea02 {left: 0%; top: 20%;}
-    .sec01.played .korea03 {left: 30%; top: 0%;}
-    .sec01.played .korea04 {left: 67%; top: 1%;}
+    .sec01.played .korea02 {left: 0%; top: 20%; opacity: 1;}
+    .sec01.played .korea03 {left: 30%; top: 0%; opacity: 1;}
+    .sec01.played .korea04 {left: 67%; top: 1%; opacity: 1;}
     .sec01.played .korea05 {}
     /* // transition Area */
     .sec01 .aniArea .group02 {top: 72.5%; padding: 8.0468%; width: 0; height: 0;}
