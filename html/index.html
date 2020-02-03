@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>Global Loyalty Network</title>
+    <script>
+    $(document).ready(function() {
+        function startActions(){
+            $('.sec01').addClass('played');
+        }
+        setTimeout(startActions, 500);
+        var winWidth = window.outerWidth;
+        if(winWidth < 768) {
+            $('.sec03 .parts01, .sec03 .parts02, .sec03 .parts03').removeClass('offVal');
+            $('.sec03 .parts01 .aniArea, .sec03 .parts02 .aniArea, .sec03 .parts03 .aniArea').addClass('offVal');
+            var slidesWidth =  winWidth * 70 / 100
+            var allianceUl = $('.sec04 ul').outerWidth();
+            $('.logos img').attr('src','../images/ani01_gln01.png')
+            $('.mediaLists li').css({'width': slidesWidth+'px'})
+            $('.mediaLists').css({'width': (slidesWidth + $('.mediaLists li').offset().left) * $('.mediaLists li').length + 25})
+            $('.sec04 ul li').css({'width': Math.floor(allianceUl / 3 ) - 10})
+        }
+        $(window).scroll(function() {
+            var sections = document.querySelector('.sections');
+            var motions = sections.querySelectorAll('.offVal');
+            var positions = $(window).scrollTop();
+            $(motions).each(function() {
+                var elTop = $(this).offset().top;
+                var elHeight = $(this).outerHeight();
+                if(positions > elTop - elHeight && positions < elTop + elHeight) {
+                    $(this).addClass('played');
+                }else if (positions > elTop + elHeight || positions < elTop - elHeight) {
+                    $(this).removeClass('played');
+                }
+            });
+            var headHeight =$('.headerWarps').outerHeight();
+            if(headHeight < positions) {
+                $('.headerWarps').addClass('on')
+            }else{
+                $('.headerWarps').removeClass('on')
+            }
+        });
+        $('.moMenu').click(function(){
+            $('.naviBar .moNone').remove()
+            $('.naviArea').toggleClass('on')
+            if($('.naviArea').hasClass('on')) {
+                var dim = document.createElement('div')
+                dim.className = 'dim';
+                $('.naviArea').prepend(dim)
+            }else {
+                $('.naviArea .dim').remove();
+            }
+        });
+    });
+    
+    </script>
+</head>
+<body>
+    <div class="wraps">
+        <div class="headerWarps">
+            <header>
+                <div class="logos">
+                    <h1 hidden>Global Loyalty Network</h1>
+                    <a href="#logo"><img src="../images/logoName.png" alt="Global Loyalty Network"></a>
+                    <button class="moMenu" type="button">menu</button>
+                </div>
+                <div class="naviArea">
+                    <ul class="naviBar">
+                        <li class="moNone"><a href="#HOME">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT US</a></li>
+                        <li><a href="#MEDIA">GLN MEDIA</a></li>
+                        <li><a href="#CONTACT">CONTACT US</a></li>
+                        <li class="translateLanguage moNone"><a href="#ko">KOR</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="banners">
+            <div>
+                <h3><span>Traveling to Bangkok? <br class="mobr">Make your trip Smarter <br class="mobr">with GLN!</span><a href="#Details">Details</a></h3>
+            </div>
+        </div>
+        <div class="sections">
+            <section class="sec01 offVal">
+                <div class="contents">
+                    <h2>What is GLN?</h2>
+                    <p class="sentenceType01">GLN is a Global Payment Hub platform <br class="mobr">that links digital platforms of major <br class="mobr">financial institutions, retailers and loyalty point <br class="pcbr">operators around the world to one <br class="mobr">global network, allowing them to freely <br class="mobr">transfer/pay with/withdraw<span class="moNone">2</span> digital assets.<span class="moNone">1</span></p>
+                    <div class="aniArea">
+                        <div class="group01">
+                            <span class="korea02"></span>
+                            <span class="korea03"></span>
+                            <span class="korea04"></span>
+                            <span class="korea05"></span>
+                            <span class="korea01"></span>
+                        </div>
+                        <div class="group02">
+                            <span class="gln01"></span>
+                            <span class="gln02"></span>
+                            <span class="gln03"></span>
+                        </div>
+                        <div class="group03">
+                            <span class="thailand01"></span>
+                            <span class="thailand02"></span>
+                        </div>
+                        <div class="group04">
+                            <span class="taiwan01"></span>
+                            <span class="taiwan02"></span>
+                        </div>
+                        <img class="group05" src="../images/ani01_obj01.png" alt="airplane">
+                    </div>
+                    <ul class="moNone">
+                        <li class="sentenceType02"><span>1</span>Digital assets are defined as reward points, miles or coupons from airlines or retailers, as well as digital currencies backed by financial institutions.</li>
+                        <li class="sentenceType02"><span>2</span>Offline Payment Service for Thailand and Taiwan was launched in may 2019. Overseas remittance brokerage service and ATM withdrawal service is under development to open in the first half of 2020.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sec02">
+                <div class="contents">
+                    <h2>GLN Media</h2>
+                    <div>
+                        <ul class="mediaLists">
+                            <li>
+                                <a href="#none">
+                                    <strong class="tit">Hana incorporates Toss into<br class="mobr"> global <br class="pcbr">payment network</strong>
+                                    <span class="listDate">Jul 5, 2019</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <strong class="tit">Hana, Sumitomo Mitsui<br class="mobr"> expand alliance</strong>
+                                    <span class="listDate">May 25, 2019</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <strong class="tit">Global Loyalty Story<br class="mobr"> of Mark & Glory</strong>
+                                    <span class="listDate">Nov 28, 2019</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn moBlock" href="#Learn">Learn more</a>
+                </div>
+            </section>
+            <section class="sec03">
+                <div class="contents">
+                    <h2>What We Offer</h2>
+                    <p class="sentenceType01">Simply implement SDKs or APIs in your<br class="mobr"> mobile app to connect to GLN’s network <br class="mobr">infrastructure,<br class="pcbr"> and offer cross-border<br class="mobr"> mobile payment services to your<br class="mobr"> customers.</p>
+                    <p class="sentenceType02 mt20 moNone">For your customers - Enable your app holders to make payments overseas at low rates at GLN-affiliated online/offline stores, and<br><span class="bold">no additional app installments are required.</span><br>For you - Connect with GLN participants’ end users from over the world, and make them be your customers(to receive international payments).</p>
+                    <div class="aniArea offVal">
+                        <span class="txt t1">On/OfflinePayment</span>
+                        <span class="txt t2">Coupon Mall</span>
+                        <span class="txt t3">ATM Withdrawal</span>
+                        <span class="txt t4">Remittance</span>
+                        <span class="obj"></span>
+                    </div>
+                    <div class="parts01 InSec03 offVal">
+                        <dl>
+                            <dt>Offline Payment</dt>
+                            <dd>Support processing inbound/outbound<br class="mobr"> cross-border <br class="pcbr">payments using your preferred<br class="mobr"> methods, such as a<br class="pcbr"> QR code or Barcode,<br class="mobr"> and CPM or MPM.</dd>
+                            <dt>Online Payment</dt>
+                            <dd>Let your customers make payments at<br class="mobr"> GLN-affiliated<br class="pcbr"> websites without international<br class="mobr"> credit card.<br class="pcbr"> (On your websites) Get paid in a<br class="mobr"> simple way by <br class="pcbr">GLN partners’ <br class="mobr"> customers worldwide.<p class="point_dots">Under Development to open in first half of 2020.</p></dd>
+                            <dt>Coupon Mall</dt>
+                            <dd>Promote your business globally by uploading <br class="mobr"> local<br class="pcbr"> coupons to GLN coupon mall. <br class="mobr"> We support multiple<br class="pcbr"> languages, various types of mobile coupon, <br class="pcbr">convenient coupon usage <br class="mobr">for customers.</dd>
+                        </dl>
+                        <div class="aniArea">
+                            <span class="phone"></span>
+                            <span class="money01"></span>
+                            <span class="money02"></span>
+                            <span class="money03"></span>
+                        </div>
+                    </div>
+                    <div class="parts02 InSec03 offVal">
+                        <dl>
+                            <dt>Overseas remittance<br>brokerage services</dt>
+                            <dd>Provide overseas remittance service through<br class="mobr"> your <br class="pcbr">app in a secure and fast way with<br class="mobr"> reliable<br class="pcbr">GLN’s Partners. Your customers can<br class="mobr"> get real time<br>updates on the status of their remittances.
+                                <p class="point_dots">Under Development to open in first half of 2020.</p>
+                            </dd>
+                        </dl>
+                        <div class="aniArea">
+                            <span class="round"></span>
+                            <span class="line"></span>
+                            <span class="icon01"></span>
+                            <span class="icon02"></span>
+                            <span class="icon03"></span>
+                            <span class="obj"></span>
+                        </div>
+                    </div>
+                    <div class="parts03 InSec03 offVal">
+                        <dl>
+                            <dt>ATM cash withdraw</dt>
+                            <dd>Let your customers be free from the burden<br class="mobr"> of carrying <br class="pcbr">international brand cards on their trip. <br class="pcbr">They can withdraw cash from overseas <br class="mobr">ATMs through <br class="pcbr">your mobile app at lower costs.
+                                <p class="point_dots">Under Development to open in first half of 2020.</p>
+                            </dd>
+                        </dl>
+                        <div class="aniArea">
+                            <span class="atm"></span>
+                            <span class="icon01"></span>
+                            <span class="icon02"></span>
+                            <span class="icon03"></span>
+                            <span class="icon04"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="sec04">
+                <div class="contents">
+                    <h2>GLN Alliance</h2>
+                    <p>Partners</p>
+                    <div class="partners">
+                        <ul>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li class="pcML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="pcML0"><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="pcML0 moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                        </ul>
+                    </div>
+                    <p>Global ICT</p>
+                    <div class="ict">
+                        <ul>
+                            <li class="moML0"><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li class="moML0"><a href="#none"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="sec05">
+                <div class="contents">
+                    <h2>GLN Value</h2>
+                    <ul class="valueLists">
+                        <li>
+                            <a href="#none">
+                                <strong class="tit">Low Cost</strong>
+                                <span class="txt">Save Time and Money to<br class="pcbr"> expand Global</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <strong class="tit">Globa</strong>
+                                <span class="txt">No need for time-consuming <br class="pcbr">research and <br class="mobr">system integration.<br class="pcbr">You have GLN for this.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <strong class="tit">Customers</strong>
+                                <span class="txt">Retain international<br class="pcbr">customers through<br>GLN network</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <strong class="tit">Lock in</strong>
+                                <span class="txt">Keep your users within your<br class="pcbr">>app, no app <br class="mobr">downloads</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="footerWarps">
+            <footer>
+                <a href="#Contact us">Contact us</a>
+                <p>For all inquiries,<br>send an email or speak with <br class="mobr">a member of our team.</p>
+                <p class="method">준법감시인 심사필 2019-광고-4504호(2019.10.02)</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

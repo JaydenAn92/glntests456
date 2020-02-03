@@ -1,0 +1,80 @@
+@charset "utf-8";
+*{-webkit-text-size-adjust:none;word-break:break-all;} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;-moz-box-sizing:border-box;vertical-align:middle;-webkit-appearance:none;appearance:none;-moz-appearance:none;resize:none;outline:0; font-family:'notokrR';}
+
+@font-face {
+    font-family: 'notokrR';
+    src: url('fonts/NotoSansKR-Regular.eot');
+    src: url('fonts/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('fonts/NotoSansKR-Regular.ttf') format('truetype'),
+        url('fonts/NotoSansKR-Regular.svg#NotoSansKR-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notokrM';
+    src: url('fonts/NotoSansKR-Medium.eot');
+    src: url('fonts/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+        url('fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('fonts/NotoSansKR-Medium.ttf') format('truetype'),
+        url('fonts/NotoSansKR-Medium.svg#NotoSansKR-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notokrB';
+    src: url('fonts/NotoSans-Bold.eot');
+    src: url('fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/NotoSans-Bold.woff2') format('woff2'),
+         url('fonts/NotoSans-Bold.woff') format('woff'),
+         url('fonts/NotoSans-Bold.ttf') format('truetype'),
+         url('fonts/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html {font-size:62.5%;} /* rem 기준 폰트 사이즈 */
+body {position:relative; min-height:100%;font-size:1.5rem;font-family:'notokrR';line-height:1.1; color: #000;}
+html,body{position:relative;width:100%; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+body,object,iframe,
+h1,h2,h3,h4,h5,h6,div,span,p,blockquote,pre,abbr,acronym,address,cite,code,del,dfn,em,img,figure,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+form,fieldset,legend,a,textarea,input,select,option,button,label,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+	margin:0;padding:0;border:0;outline:0;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;-moz-box-sizing:border-box;
+}
+
+a:link{text-decoration:none;}
+a:focus{outline:thin dotted;}
+a:active,a:hover{outline:0;text-decoration:none;}
+a:visited{text-decoration:none;}
+
+h1, h2, h3, h4, h5, h6{font-weight:normal;font-size:inherit;}
+b{font-weight:bold;}
+strong{font-weight:normal;vertical-align:middle;}
+hr{display:none;box-sizing:content-box;height:0;}
+address, caption, cite, code, dfn, em, var{font-style:normal;font-weight:normal;}
+abbr, acronym, img, button{border:0;}
+pre{white-space:pre-wrap;}
+q{quotes:"\201C" "\201D" "\2018" "\2019";}
+sub, sup{line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+span,em{vertical-align:top;}
+i {font-style:normal;}
+
+ul, ol, li{list-style:none;}
+
+figure{margin:0;}
+
+button{cursor:pointer;}
+button, input, select, textarea{border:0 none;outline:0 none;background-color:#fff;}
+
+textarea{vertical-align:top;border:solid 1px #ccc;}
+
+table{border-collapse:collapse;empty-cells:show;border-spacing:0;table-layout:fixed;}
+table caption, fieldset legend{display:none;}
