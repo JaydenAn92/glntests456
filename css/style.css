@@ -323,7 +323,7 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01 .aniArea {height: 100%; position: absolute; top: 0; left: 0;}
     .sentenceType01{padding: 0 2rem; font-size: 1.4rem; font-weight: normal;}
     .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto;}
-    .sec01 .aniArea .group01::before{padding: 15.625% 14.375%;}
+    .sec01 .aniArea .group01::before{content:'';display:block; padding: 15.625% 14.375%; width: auto; height: auto;}
     .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: auto; height: auto; background-size: 100%; background-position: center;}
     .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
     .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
