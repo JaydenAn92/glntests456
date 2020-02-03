@@ -24,6 +24,18 @@
             $('.mediaLists li').css({'width': slidesWidth+'px'})
             $('.mediaLists').css({'width': (slidesWidth + $('.mediaLists li').offset().left) * $('.mediaLists li').length + 25})
             $('.sec04 ul li').css({'width': Math.floor(allianceUl / 3 ) - 10})
+            $('.sec01 .aniArea .group01').css({
+                'width': (winWidth * 14.375 / 100) * 2 + 'px',
+                'height': (winWidth * 15.625 / 100) * 2 + 'px',
+            })
+            $('.sec01 .aniArea .group02').css({
+                'width': (winWidth * 8.0468 / 100) * 2 + 'px',
+                'height': (winWidth * 8.0468 / 100) * 2 + 'px',
+            })
+            $('.sec01 .aniArea .group03, .sec01 .aniArea .group04').css({
+                'width': (winWidth * 14.5312 / 100) * 2 + 'px',
+                'height': (winWidth * 12.4218 / 100) * 2 + 'px',
+            })
         }
         $(window).scroll(function() {
             var sections = document.querySelector('.sections');
