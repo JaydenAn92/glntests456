@@ -6,6 +6,8 @@ $(document).ready(function() {
     var winWidth = window.outerWidth;
     if(winWidth < 768) {
         $('.logos img').attr('src','../images/ani01_gln01.png')
+    }else{
+        $('.logos img').attr('src','../images/logoName.png')
     }
     if(winWidth < 768 && $('.wraps').hasClass('main')) {
         $('.sec03 .parts01, .sec03 .parts02, .sec03 .parts03').removeClass('offVal');
