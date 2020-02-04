@@ -5,7 +5,7 @@ h2 {padding: 6.8rem 0 3.2rem 0; font-size: 6rem; text-align: center; color: #333
 .point_dots{padding: 0 0 0 1rem; text-indent: -1rem; font-size: 1.6rem; color: #999999;}
 .point_dots::before{content: ''; display: inline-block; margin: 0 0.4rem 0.2rem 0.2rem; border-radius: 50%; width: 0.4rem; height: 0.4rem; background: #999999; vertical-align: middle; }
 .bold{font-weight: bold!important;}
-.mt20{margin-top: 2rem!important;}
+.mt00{margin-top: 0rem!important;}
 .mt20{margin-top: 2rem!important;}
 .mobr{display: none;}
 .pcbr{display: block;}
@@ -25,6 +25,10 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
 .naviBar .translateLanguage a{margin: 0.6rem 0 0;}
 .translateLanguage a {font-size: 1.2rem; background: url(../images/arrowIcon01.png) no-repeat; background-position: right center; padding-right: 1.6rem;}
 /* banners */
+.subbanners {width: 100%; height: 23rem;}
+.subbanners.about{background: #ebedff no-repeat; background-image:url(../images/bannersBg_aboutUs.jpg);background-size: auto 100%; background-position: center }
+.subbanners.media{background: #ebedff no-repeat; background-image:url(../images/bannersBg_media.jpg);background-size: auto 100%; background-position: center }
+.subbanners.contact{background: #ebedff no-repeat; background-image:url(../images/bannersBg_contact.jpg);background-size: auto 100%; background-position: center }
 .banners {background: #5e48b9; color: #fff;}
 .banners div{width: 110rem; margin: 0 auto; background: url(../images/bannersBg.jpg) no-repeat; background-position: left center; background-size:auto 100%;}
 .banners h3 {line-height: 6rem; font-size: 1.6rem; text-align: center; background: url(../images/bannersBg.jpg) no-repeat; background-position: right center; background-size:auto 100%;}
@@ -75,7 +79,7 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
 .sec01.played .taiwan01 {opacity: 1; transition: 0.5s 2.25s all;}
 .sec01.played .taiwan02 {opacity: 1; left: 68%; top: 0%; transition: 0.5s 2.5s all;}
 /* //transition Area */
-.sec01 .aniArea .group05{position: absolute; left: 85%; top: 28%; width: 8.7rem; height:3.2rem; opacity: 0;} 
+.sec01 .aniArea .group05{position: absolute; left: 85%; top: 28%; width: 8.7rem; height:3.2rem; opacity: 0;}
 /* .sec01 .aniArea .group05 .obj01{left: 0%; top: 0%; width: 8.7rem; height:3.2rem; background: url(../images/ani01_obj01.png) no-repeat;} */
 .sec01.played .group05 {animation: obj01; animation-duration: 5s; animation-delay: 2s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;}
 /* transition Area */
@@ -103,6 +107,7 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
 /* //transition Area */
 
 .sec02 .contents {padding: 0 0 7rem;}
+.sec02 .contents .mediaListArea + .btn {display: block; margin: 2rem 0 0; border: 0.1rem solid #ededed;; border-radius: 0.2rem; padding: 2rem 0rem; font-size: 2.5rem; color: #333333; text-align: center;}
 .sec02 .mediaLists{text-align: center; display: inline-block;}
 .sec02 .mediaLists li{position: relative; display: inline-block; border: 1px solid #ededed; width: 35rem; height: 36.8rem;}
 .sec02 .mediaLists li+li{margin-left:calc((110rem - 105.7rem) / 2);}
@@ -111,8 +116,12 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
 .sec02 .mediaLists li:nth-child(1) a::before{background: url(../images/mediaList02.png)no-repeat; background-position: center top; background-size: 100%;}
 .sec02 .mediaLists li:nth-child(2) a::before{background: url(../images/mediaList06.png)no-repeat; background-position: center top; background-size: 100%;}
 .sec02 .mediaLists li:nth-child(3) a::before{background: url(../images/mediaList17.png)no-repeat; background-position: center top; background-size: 100%;}
-.sec02 .mediaLists .tit{display: block; padding:3rem 0 3rem; font-size: 1.6rem; color: #333333; text-align: left; font-weight: bold;}
+.sec02 .mediaLists.line02 li:nth-child(1) a::before{background: url(../images/mediaList08.png)no-repeat; background-position: center top; background-size: 100%;}
+.sec02 .mediaLists.line02 li:nth-child(2) a::before{background: url(../images/mediaList07.png)no-repeat; background-position: center top; background-size: 100%;}
+.sec02 .mediaLists.line02 li:nth-child(3) a::before{background: url(../images/mediaList13.png)no-repeat; background-position: center top; background-size: 100%;}
+.sec02 .mediaLists .tit{display: block; padding:3rem 0 3rem; font-size: 1.6rem; color: #333333; text-align: left; font-weight: bold; letter-spacing: -0.01rem; line-height: 2rem;}
 .sec02 .mediaLists .listDate{position: absolute; left: 2rem; bottom:2rem; font-size: 1.4rem; color: #999999;}
+.mediaLists + .mediaLists{margin-top: 3rem;}
 .sec03 {width: 100%; background: linear-gradient(to bottom, #eeeeee 30%, #ffffff 40%);}
 .sec03 .contents > .aniArea {height: 60rem; background: url(../images/bgInsec03.png) no-repeat; background-size: 100%; background-position: center;}
 .sec03 .contents > .aniArea * {position: absolute;}
@@ -291,6 +300,31 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
 .footerWarps .method{font-size: 1.6rem; padding: 5rem 0 0;}
 
 
+/* subpage */
+.subTit {padding: 8rem 0 6rem; text-align: left; position: relative;}
+.subTit::before{content: ''; display: block; position: absolute; width: 4rem; height: 0.2rem; left: 0; top: 6rem; background: #000;}
+.aboutSub {padding: 0 0 3rem}
+.aboutSub .contents p{font-size: 2rem; color: #333333; line-height: 2.8rem; font-family: 'notokrM'; word-break: keep-all;}
+.aboutSub .contents p+p{margin-top: 3rem;}
+.contactSub .info .infoArea::after {content: ''; clear: both; display: block;}
+.contactSub .info .infoBox {margin-top: 6rem ;width: calc((110rem / 2) - 4rem); height: auto; float: left;}
+.contactSub .info .infoBox:nth-child(1) {margin-top: 0rem;}
+.contactSub .info .infoBox:nth-child(2) {margin-top: 0rem;}
+.contactSub .info .infoBox:nth-child(even) {margin-left: 8rem;}
+.contactSub .info .infoBox .brenchTit{position: relative;}
+.contactSub .info .infoBox .brenchTit h3{color: #999999; font-size: 4rem;}
+.contactSub .info .infoBox .brenchTit a{display: inline-block; position: absolute; right: 0%; top: 0; width: 5rem; height: 5rem; background: url(../images/icon_link.png) no-repeat; background-position: center; background-size: 100%;}
+.contactSub .info .infoBox .brenchInfo ul{padding-top: 2.5rem}
+.contactSub .info .infoBox .brenchInfo li{border-bottom: 0.1rem solid #ededed; padding: 2rem 0; font-size: 2rem;}
+.contactSub .info .infoBox .brenchInfo a{display: inline-block; color: #000;}
+.contactArea li {margin-top: 3.5rem;}
+.contactArea label {display: inline-block; margin-bottom: 2rem; font-size: 2rem; color: #999;}
+.contactArea input {display: block; border: 0.1rem solid #f0f0f0; padding: 0 3rem; width: 100%; height: 6rem;}
+.contactArea select {display: block; border: 0.1rem solid #f0f0f0; padding: 0 3rem; width: 100%; height: 6rem; font-size: 2rem; background: url(../images/icon_arrow_b.png) no-repeat;background-position: right 3rem center; background-size: 2rem 1rem;}
+.contactArea textarea {display: block; border: 0.1rem solid #f0f0f0; padding: 1.5rem 3rem; width: 100%; height: 16rem;}
+.contactArea .formBtn {text-align: center;margin: 5rem 0 10rem;} 
+.contactArea .formBtn a{display: inline-block; padding: 3rem 0; width: 40rem; color: #fff; background: #5f46b5; font-size: 2.5rem;}
+
 @media all and (max-width: 768px) {
     .wraps{overflow: hidden;}
     .moNone{display: none;}
@@ -322,26 +356,26 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01 .contents{position: absolute; left: 0; top: 0; height: 100%;} 
     .sec01 .aniArea {height: 100%; position: absolute; top: 0; left: 0;}
     .sentenceType01{padding: 0 2rem; font-size: 1.4rem; font-weight: normal;}
-    .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto;} 
-/* padding: 15.625% 14.375%; */
-    .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: auto; height: auto; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
-    .sec01 .aniArea .korea04{left: 70%; top: 22%; padding: 15.2173%; width: auto; height: auto; background-size: 100%; background-position: center;}
+    .sec01 .aniArea .group01{left: 79%; top: 62%; width: auto; height: auto; /* padding: 15.625% 14.375%; */}
+    .sec01 .aniArea .korea01{left: auto; right: 0; padding: 38.0434%; width: 0; height: 0; background-size: 100%;}
+    .sec01 .aniArea .korea02{left: 20%; top: 35%; padding: 15.2173%; width: 0; height: 0; background-size: 100%;}
+    .sec01 .aniArea .korea03{left: 43%; top: 20%; padding: 15.2173%; width: 0; height: 0; background-size: 100%;}
+    .sec01 .aniArea .korea04{left: 70%; top: 22%; padding: 15.2173%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .korea05{left: -10%; top: 80%; padding: 10.0543% 24.4565%; width: 0; height: 0; background: url(../images/ani01_korea05_mo.png) no-repeat; background-size: 100%;}
     .sec02 .contents{text-align: center;}
     .sec02 .contents > div {overflow: hidden; overflow-x: auto;}
-    .sec02 .contents > div ul {display: block; width: 1000%;}
+    .sec02 .contents > div ul {display: block;}
     .sec02 .contents > div ul::after{content: ''; clear: both; display: block;}
     .sec02 .contents > div li{float: left;}
+
     .sec02 .contents .btn {display: inline-block; margin: 2rem 0 0; border: 0.1rem solid #ededed;; border-radius: 0.2rem; padding: 1rem 3rem; font-size: 1.5rem; color: #333333;}
     /* transition Area */
-    .sec01.played .korea02 {left: 0%; top: 20%; opacity: 1;}
-    .sec01.played .korea03 {left: 30%; top: 0%; opacity: 1;}
-    .sec01.played .korea04 {left: 67%; top: 1%; opacity: 1;}
+    .sec01.played .korea02 {left: 0%; top: 20%;}
+    .sec01.played .korea03 {left: 30%; top: 0%;}
+    .sec01.played .korea04 {left: 67%; top: 1%;}
     .sec01.played .korea05 {}
     /* // transition Area */
-    .sec01 .aniArea .group02 {top: 72.5%; width: auto; height: auto;}/* padding: 8.0468%; */
+    .sec01 .aniArea .group02 {top: 72.5%; width: auto; height: auto; /* padding: 8.0468%; */}
     .sec01 .aniArea .gln01 {left: 0; top: 0; padding: 50%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .gln02 {left: -85%; top: 40%; padding: 13.5922% 45.1456%; width: 0; height: 0; background: url(../images/ani01_gln02_mo.png) no-repeat; background-size: 100%;}
     .sec01 .aniArea .gln03 {left: 30%; top: -80%; padding: 43.2038% 13.1067%; width: 0; height: 0; background: url(../images/ani01_gln03_mo.png) no-repeat; background-size: 100%;}
@@ -349,10 +383,10 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .sec01.played .gln02{}
     .sec01.played .gln03{}
     /* // transition Area */
-    .sec01 .aniArea .group03 {left: 53%; top: 50%; width: auto; height: auto;}/* padding: 12.4218% 14.5312%; */
+    .sec01 .aniArea .group03 {left: 53%; top: 50%; width: 0; height: 0;} /* padding: 12.4218% 14.5312%; */
     .sec01 .aniArea .thailand01 {padding: 37.6344%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .thailand02 {padding: 15.7608%; width: 0; height: 0; background-size: 100%;}
-    .sec01 .aniArea .group04 {left: 22%; top: 65%; width: auto; height: auto;}/* padding: 12.4218% 14.5312%; */
+    .sec01 .aniArea .group04 {left: 22%; top: 65%; width: 0; height: 0;}/* padding: 12.4218% 14.5312%; */
     .sec01 .aniArea .taiwan01 {padding: 37.6344%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .taiwan02 {padding: 15.7608%; width: 0; height: 0; background-size: 100%;}
     .sec01 .aniArea .group05 {top: 82%; padding: 2.5781% 7.1093% ; width: 0; height: 0;  background: url(../images/ani01_obj01.png) no-repeat; background-size: 100%;}
@@ -360,7 +394,7 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
         0% {
             opacity: 0;
             left: 100%;
-            top: 82%;
+            top: 82%; 
         }
         10% {
             opacity: 1;
@@ -371,13 +405,13 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
         100% {
             opacity: 0;
             left: -20%;
-            top: 52%;
+            top: 52%; 
         }
     }
     .sec02 .mediaLists .listDate{font-size: 1.2rem;}
     .sec02 .mediaLists li {width: auto; height: auto; margin-left: 2.5rem}
     .sec02 .mediaLists li + li{margin-left: 2.5rem}
-    .sec02 .mediaLists li a{padding:  66.9642% 8.9% 15.625%;}
+    .sec02 .mediaLists li a{padding:  66.9642% 2rem 3.5rem;}
     .sec02 .mediaLists li a::before{padding: 66.9642% 0 0;}
     .sec02 .mediaLists .tit{padding: 2.5rem 0; font-size: 1.4rem; font-weight: normal; letter-spacing: -0.05rem;}
     .sec03{background: linear-gradient(to bottom, #eeeeee 10%, #ffffff 15%);}
@@ -481,4 +515,37 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .footerWarps p{font-size: 2rem;}
     .footerWarps .method {font-size: 1.2rem; padding: 4rem 0 0;}
     .footerWarps::after{padding: 0 0 20%;}
+
+    /* subpage */
+    .subbanners {height: 17.5rem;}
+    .subbanners.about{background:url(../images/bannersBg_aboutUs_mo.jpg) no-repeat; background-size: auto 100%; background-position: center }
+    .subbanners.media{background:url(../images/bannersBg_media_mo.jpg) no-repeat; background-size: auto 100%; background-position: center }
+    .subbanners.contact{background:url(../images/bannersBg_contact_mo.jpg) no-repeat; background-size: auto 100%; background-position: center }
+    .subTit{padding: 8rem 0 2rem;font-family: 'notokrM'; font-weight: bold;}
+    .subTit::before{width: 2rem; height: 0.1rem;}
+    .aboutSub .contents p {font-size: 1.4rem; line-height: 2.2rem;}
+    .aboutSub{padding: 0 2rem 4rem;}
+    .mediaSub{padding: 0 2rem}
+    .contactSub{padding: 0 2rem}
+
+    .sec02 .contents > .mediaListArea .mediaLists{display: none}
+    .sec02 .contents > .mediaListArea .mediaLists.line01{display: block}
+    .sec02 .contents > .mediaListArea li{float: inherit; margin: 0; width: 100%}
+    .sec02 .contents > .mediaListArea li + li{margin-top: 2.5rem}
+    .sec02 .contents > .mediaListArea li a{width: 100%}
+    .sec02 .contents .mediaListArea + .btn{display: inline-block; margin: 2rem 0 0; border: 0.1rem solid #ededed;; border-radius: 0.2rem; padding: 1rem 3rem; font-size: 1.5rem; color: #333333;}
+    .contactSub .info .infoBox{margin-top: 3rem; width: 100%;}
+    .contactSub .info .infoBox .brenchTit h3{font-size: 2.5rem;}
+    .contactSub .info .infoBox .brenchInfo ul{padding-top: 1.5rem;}
+    .contactSub .info .infoBox .brenchInfo li{padding: 1rem 0; font-size: 1.4rem;}
+    .contactSub .info .infoBox .brenchTit a {width: 3rem; height: 3rem;}
+    .contactSub .info .infoBox:nth-child(even){margin: 3rem 0 0;}
+    .contactArea label{font-size: 1.4rem; margin-bottom: 1rem;}
+    .contactArea li {margin-top: 2rem;}
+    .contactArea li:first-child { margin: 0}
+    .contactArea input{padding: 0 1.5rem; ; width: 100%; height: 4rem;}
+    .contactArea textarea{padding: 1rem 1.5rem; height: 11rem;}
+    .contactArea select{padding: 0 1.5rem; height: 4rem; font-size: 1.4rem; background: url(../images/icon_arrow_b.png) no-repeat; background-position: right 1.5rem center; background-size: 1rem 0.5rem;}
+    .contactArea .formBtn{ margin: 3.5rem 0 6rem;}
+    .contactArea .formBtn a{ width: 100%; padding: 1.5rem 0; font-size: 1.5rem;}
 }
