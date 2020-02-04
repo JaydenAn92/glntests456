@@ -528,6 +528,7 @@ header {width: 110rem; margin: 0 auto; padding: 2.2rem 0 1.8rem;}
     .mediaSub{padding: 0 2rem}
     .contactSub{padding: 0 2rem}
 
+    .sec02 .contents > .mediaListArea {overflow: initial; overflow-x: initial;}
     .sec02 .contents > .mediaListArea .mediaLists{display: none}
     .sec02 .contents > .mediaListArea .mediaLists.line01{display: block}
     .sec02 .contents > .mediaListArea li{float: inherit; margin: 0; width: 100%}
